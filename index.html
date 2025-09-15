@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Changelog Timeline</title>
+   <style>/* Reset */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #000000;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.container {
+    background:linear gradient(to right, #48176e, #0f0f0f);
+     padding: 40px;
+  border-radius: 12px;
+  max-width: 600px;
+  width: 100%;
+  position: relative;
+  box-shadow: 0 0 20px rgba(49, 8, 82, 0.842) ;
+box-shadow: 0 0 25px rgba(122, 255, 248, 0.8), 
+              0 0 50px rgba(155, 107, 255, 0.6);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 28px;
+}
+
+.subtitle {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 14px;
+  color: #bbb;
+}
+
+/* Timeline */
+.timeline {
+  position: relative;
+  padding: 0;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 2px;
+  background-color: #555;
+  transform: translateX(-50%);
+}
+
+.timeline-item {
+  position: relative;
+  width: 100%;
+  margin: 30px 0;
+}
+
+.timeline-item .content {
+  width: 46%;
+  padding: 15px 20px;
+  border-radius: 8px;
+  position: relative;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.timeline-item.left .content {
+  margin-left: 0;
+  margin-right: auto;
+  text-align: right;
+}
+
+.timeline-item.right .content {
+  margin-right: 0;
+  margin-left: auto;
+  text-align: left;
+}
+
+.timeline-item::after {
+  content: '';
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 14px;
+  height: 14px;
+  background-color: #f8f8f8;
+  border: 2px solid #f05ae8;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+/* Button */
+.button-container {
+  text-align: center;
+  margin-top: 40px;
+  
+}
+
+.btn {
+  padding: 10px 20px;
+  background-color: #fcfafb;
+  color: #0e1730;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: transform 0.3s ease; /* <--- This line is necessary */
+}
+
+.btn:hover {
+    box-shadow: 0 0 15px rgba(122, 228, 255, 0.7);
+
+  transform: scale(1.2); 
+  
+}
+
+.timeline-item .content {
+  width: 46%;
+  padding: 18px 22px;
+  border-radius: 12px;
+  background: #1f1f1f;
+  box-shadow: 0 0 10px rgba(183, 107, 255, 0.3); /* subtle base glow */
+  transition: all 0.4s ease;
+}
+
+.timeline-item .content:hover {
+  box-shadow: 0 0 25px rgba(122, 255, 248, 0.8), 
+              0 0 50px rgba(155, 107, 255, 0.6);
+  transform: translateY(-6px) scale(1.03);
+}
+</style>
+</head>
+<body>
+  <div class="container">
+    <h1>Changelog</h1>
+    <p class="subtitle">Here's everything we have shipped in the past few days</p>
+
+    <div class="timeline">
+      <!-- Timeline items -->
+      <div class="timeline-item left">
+        <div class="content">
+          <h3>September 3, 2024</h3>
+          <p>Announcing Projects on Frontend Roadmap</p>
+        </div>
+      </div>
+      <div class="timeline-item right">
+        <div class="content">
+          <h3>August 28, 2024</h3>
+          <p>Build your learning habits with learning streaks</p>
+        </div>
+      </div>
+      <div class="timeline-item left">
+        <div class="content">
+          <h3>August 25, 2024</h3>
+          <p>Git and GitHub Roadmap</p>
+        </div>
+      </div>
+      <div class="timeline-item right">
+        <div class="content">
+          <h3>August 22, 2024</h3>
+          <p>Submit your project solution and get feedback</p>
+        </div>
+      </div>
+      <div class="timeline-item left">
+        <div class="content">
+          <h3>August 15, 2024</h3>
+          <p>Backend Project Ideas</p>
+        </div>
+      </div>
+      <div class="timeline-item right">
+        <div class="content">
+          <h3>August 10, 2024</h3>
+          <p>Redis Roadmap</p>
+        </div>
+      </div>
+      <div class="timeline-item left">
+        <div class="content">
+          <h3>August 1, 2024</h3>
+          <p>Changelog page to help you stay in the loop</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="button-container">
+        <input type="submit" value="Visit Complete Changelog" class="btn">
+      <!-- <a href="#" ></a> -->
+    </div>
+  </div>
+</body>
+</html>
